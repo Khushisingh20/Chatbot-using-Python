@@ -1,0 +1,154 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies", "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies"],
+         "context": [""]
+        },
+        {"tag": "adverse_drug",
+         "patterns": ["How to check Adverse drug reaction?", "Open adverse drugs module", "Give me a list of drugs causing adverse behavior", "List all drugs suitable for patient with adverse reaction", "Which drugs dont have adverse reaction?" ],
+         "responses": ["Navigating to Adverse drug reaction module"],
+         "context": [""]
+        },
+        {"tag": "blood_pressure",
+         "patterns": ["Open blood pressure module", "Task related to blood pressure", "Blood pressure data entry", "I want to log blood pressure results", "Blood pressure data management" ],
+         "responses": ["Navigating to Blood Pressure module"],
+         "context": [""]
+        },
+        {"tag": "blood_pressure_search",
+         "patterns": ["I want to search for blood pressure result history", "Blood pressure for patient", "Load patient blood pressure result", "Show blood pressure results for patient", "Find blood pressure results by ID" ],
+         "responses": ["Please provide Patient ID", "Patient ID?"],
+         "context": ["search_blood_pressure_by_patient_id"]
+        },
+        {"tag": "search_blood_pressure_by_patient_id",
+         "patterns": [],
+         "responses": ["Loading Blood pressure result for Patient"],
+         "context": [""]
+        },
+        {"tag": "pharmacy_search",
+         "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
+         "responses": ["Please provide pharmacy name"],
+         "context": ["search_pharmacy_by_name"]
+        },
+        {"tag": "search_pharmacy_by_name",
+         "patterns": [],
+         "responses": ["Loading pharmacy details"],
+         "context": [""]
+        },
+        {"tag": "hospital_search",
+         "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
+         "responses": ["Please provide hospital name or location"],
+         "context": ["search_hospital_by_params"]
+        },
+        {"tag": "search_hospital_by_params",
+         "patterns": [],
+         "responses": ["Please provide hospital type"],
+         "context": ["search_hospital_by_type"]
+        },
+        {"tag": "search_hospital_by_type",
+         "patterns": [],
+         "responses": ["Loading hospital details"],
+         "context": [""]
+        },
+        {"tag": "search_mental_hospital",
+        "patterns": ["What does it mean to have a mental illness?"],
+        "responses": ["Mental illness is any disease or condition that influences the way a person thinks, feels, behaves, and/or relates to others and to his or her surroundings. Although the symptoms of mental illness can range from mild to severe and are different depending on the type of mental illness, a person with an untreated mental illness often is unable to cope with life's daily routines and demands."],
+         "context": [""]
+        },
+        {"tag":"",
+        "patterns": ["Who does mental illness affect?"],
+        "responses":["A mental illness is a condition that affects a person's thinking, feeling or mood. Such conditions may affect someone's ability to relate to others and function each day. Each person will have different experiences, even people with the same diagnosis."],
+        "context":[]
+        },
+        {"tag":"",
+        "patterns":["What are some of the warning signs of mental illness?"],
+        "responses":["Symptoms of mental health disorders vary depending on the type and severity of the condition.Each illness has its own symptoms, but common signs of mental illness in adults and adolescents can include the following: Excessive worrying or fear. Feeling excessively sad or low."
+       
+        ],
+        "context":[""]
+        },
+        {"tag":"",
+         "patterns":["How can I find a mental health professional right for my child or myself?"],
+         "responses":["Feeling comfortable with the professional you or your child is working with is critical to the success of your treatment. Finding the professional who best fits your needs may require some research."],
+         "context":[]
+        } ,
+        {"tag":"professionals",
+         "patterns":["What are the different types of mental health professionals?"],
+         "responses":["There are many types of mental health professionals. Finding the right one for you may require some research."],
+         "context":[""]
+        },
+        {"tag":"problems",
+         "patterns":["What causes mental health problems?"],
+         "responses":["Challenges or problems with your mental health can arise from psychological, biological, and social, issues, as well as life events."],
+         "context":[]
+        } ,
+        {"tag":"social",
+        "patterns":["How can I maintain social connections? What if I feel lonely?"],
+        "responses":["We have our family,friends and close ones with whome we can share our feelings"],
+        "context":[]
+        },
+        {"tag":"physical health",
+        "patterns":["How can I take care of my physical health?"],
+        "responses":["Taking care of physical health is the first step of taking care of your mental health there are many ways such as proper diet,daily working out,yoga etc for taking care of yourselves"],
+        "context":[]
+        },
+        {"tag":"distraction",
+        "patterns":["How can I use distraction to manage difficult thoughts or feelings?" ],
+        "responses":["Distraction is a very useful tool to keep you away from difficult thoughts and feelings as it diverts your mind from that topic and helps you to relax"],
+        "context":[]
+        },
+        {"tag":"group",
+        "patterns":["How can I find a support group?"],
+        "responses":["Support groups are a way for people with a common experience to help each other and learn from each other. There are support groups for people with any experience of mental illness, support groups for people with a specific diagnosis, support groups for family members and friends, and more."],
+        "context":[]
+        },
+        {"tag":"counsellor",
+        "patterns":["How can I see a counsellor?"],
+        "responses":["You need to consult a counsellor which is specialist in the department you needed."],
+        "context":[]
+        },
+        {"tag":"MSP",
+        "patterns":["What is MSP?"],
+        "responses":["MSP stands for Medical Sevice Plan,It covers the cost of medically-necessary insured doctor services."],
+        "context":[]
+        },
+        {"tag":"anxiety,stress",
+        "patterns":["What's the difference between anxiety and stress?"],
+        "responses":["The difference between them is that stress is a response to a threat in a situation. Anxiety is a reaction to the stress. Whether in good times or bad, most people say that stress interferes at least moderately with their lives."],
+        "context":[]
+        },
+        {"tag":"friends",
+        "patterns":["What should I do if i am worried about a friend or relative?"],
+        "responses":["Stress, anxiety or other symptoms seem to be making it hard for them to cope as well as usual, and a doctor could help. You can go with them to a doctor’s appointment to support them. Many mental health problems can be treated. They might be worried they will have to go to hospital."],
+        "context":[]
+        },
+        {"tag":"prodrome",
+        "patterns":["What is a prodrome?"],
+        "responses":["In medicine, a prodrome is an early sign or symptom (or set of signs and symptoms) that often indicates the onset of a disease before more diagnostically specific signs and symptoms develop. It is derived from the Greek word prodromos, meaning running before. Prodromes may be non-specific symptoms or, in a few instances, may clearly indicate a particular disease, such as the prodromal migraine aura."],
+        "context":[]
+        }
+
+        
+
+                
+]
+}
